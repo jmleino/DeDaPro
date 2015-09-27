@@ -1,0 +1,39 @@
+Estimating Car's MPG
+========================================================
+author: Mickey Mouse
+date: 27.9.2015
+
+
+Data Product for MPG Estimation
+========================================================
+
+- Uses mtcars dataset
+- Linear regression allows accurate mpg estimates
+- Easy to use
+
+
+User Input
+========================================================
+
+- Car's horsepower
+- Car's weigth
+- Transmission type
+
+![Inputs](Input.png)
+
+Regression model
+========================================================
+
+The linear regression model used:
+```{r}
+lm( mpg ~ wt + hp + am, data = mtcars )
+```
+
+Output
+========================================================
+
+The product dislays the estimated MPG as 
+well as two graphs illustrating the values 
+compared to other car models.
+
+![Outputs](Output.png)
